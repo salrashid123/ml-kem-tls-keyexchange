@@ -2,7 +2,7 @@
 
 Simple client/server demo in golang which uses the `X25519MLKEM768` key exchange.
 
-Basically, its a http client/server using where the arrive arrive at the same shared key on both ends which involving both `ML-KEM` and `X25519`.
+Basically, its a http client/server TKS key exchange which arrives at the same shared key on both ends which involving both `ML-KEM` and `X25519`.
 
 * [Post-quantum hybrid ECDHE-MLKEM Key Agreement for TLSv1.3](https://www.ietf.org/archive/id/draft-kwiatkowski-tls-ecdhe-mlkem-02.html)
 
