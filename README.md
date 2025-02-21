@@ -36,12 +36,12 @@ References:
 
 For golang, this is new in `go1.24rc1+` so you need to install that version atleast 
 
-eg ```
+eg 
+
+```
 go install golang.org/dl/go1.24rc1@latest`
 go1.24rc1 download
-```
 
-```bash
 # export SSLKEYLOGFILE=tls.keylog
 # sudo tcpdump -s0 -iany -w trace.cap "port 8081 and (host localhost)"
 export GODEBUG=tlsmlkem=1
