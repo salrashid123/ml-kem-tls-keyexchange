@@ -75,7 +75,7 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
-	ciphertext, kemSharedSecret := ek.Encapsulate()
+	kemSharedSecret, ciphertext := ek.Encapsulate()
 
 	// For X25519MLKEM768, the shared secret is the concatenation of the ML-KEM shared
 	// secret and the X25519 shared secret. The shared secret is 64 bytes (32 bytes for each part).
