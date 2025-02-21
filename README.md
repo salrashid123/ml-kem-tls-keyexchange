@@ -34,17 +34,22 @@ References:
 ### golang
 
 
-For golang, this is new in `go1.24rc1+` so you need to install that version atleast (`go install golang.org/dl/go1.24rc1@latest`)
+For golang, this is new in `go1.24rc1+` so you need to install that version atleast 
+
+eg ```
+go install golang.org/dl/go1.24rc1@latest`
+go1.24rc1 download
+```
 
 ```bash
 # export SSLKEYLOGFILE=tls.keylog
 # sudo tcpdump -s0 -iany -w trace.cap "port 8081 and (host localhost)"
 export GODEBUG=tlsmlkem=1
-go run server/main.go
+go1.24rc1 run server/main.go
 
 # in a new window
 export GODEBUG=tlsmlkem=1
-go run client/main.go
+go1.24rc1 run client/main.go
 ```
 
 ### Step by Step X25519MLKEM768 
